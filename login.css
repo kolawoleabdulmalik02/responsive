@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8B9A6E;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    z-index: 200;
+    top: 0;
+}
+.logo img{
+    width: 150px;
+    height:18vh;
+}
+.logo{
+    text-align: center;
+    margin: 40px 0;
+}
+.logo{
+    animation: slideIn 1.2s ease forwards;
+}
+@keyframes slideIn{
+    from{opacity: 0;
+        transform: translateY(-50px);
+    }
+    to{opacity:1 ;
+        transform: translateY(0);
+    }
+
+}
+.nav-action ul{
+    list-style: none;
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+}
+.nav-action a{
+    text-decoration: none;
+    color:gold ;
+}
+.nav-action a:hover{
+    border-bottom: 2px solid gold;
+}
+.navbtn{
+    margin: 30px;
+}
+.navbtn a{
+    text-decoration: none;
+    color:#FFCB56;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 8px 12px rgba(0,0, 0, 0.4);
+    
+}
+.navbtn a:hover{
+    background-color: white;
+    color:black;
+}
+.sign{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:40px 0;
+    text-align: center; 
+
+}
+.sign h1{
+    color: #8B9A6E;
+    margin:40px ;
+}
+.no{
+    display: flex;
+    gap: 10px;
+    margin:40px;
+}
+form{
+    margin: 40px auto;
+    box-shadow: 0 8px 12px rgba(0,0, 0, 0.4);
+    max-width: 520px;
+    padding:10px 40px;
+    min-height: 70vh;
+    
+}
+
+.an{
+    margin-bottom: 10px;
+}
+.first input{
+width: 200px;
+min-height: 7vh;
+margin-bottom: 10px;
+}
+.mail input{
+    width: 400px;
+    min-height: 7vh;
+    margin-bottom: 10px;
+}
+.number p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+.number input{
+    width: 400px;
+    min-height: 7vh;
+    margin-bottom: 15px;
+}
+.class{
+    display: flex;
+    gap: 13px;
+    color: gray;
+}
+.not{
+    margin: 10px 0;
+}
+.not a{
+    text-decoration: none;
+    color:black;
+    border: 2px solid black;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.not a:hover{
+    background-color: black;
+    color: white;
+}
+.create{
+    margin:10px 0;
+
+}
+.create p{
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.create input{
+    width: 400px;
+    min-height: 7vh;
+}
+/* .button{
+    margin-top: 30px;
+    
+}
+.button a{
+    padding: 15px;
+    background-color: black;
+    color:white ;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button a:hover{
+    background-color: #8B9A6E;
+    color: black;
+} */
+button{
+    background-color: black;
+    padding: 12px 14px;
+    color: rgb(223, 223, 223);
+    font-size: 15px;
+    cursor: pointer;
+    width: 400px;
+    border: none;
+    margin-top: 30px;
+}
+button:hover{
+    background-color: gold;
+    color: black;
+
+}
+@media (max-width:420px) {
+    .logo{
+        margin: auto;
+    }
+    .sign h1{
+        width: fit-content;
+        margin: 0;
+    }
+    form{
+        flex-direction: column;
+        height: fit-content;
+        width: fit-content;
+        padding: 12px;
+    }
+    .first input{
+        flex-direction: column;
+        width: 320px;
+    }
+    .mail input{
+        width: 320px;
+    }
+    .number input{
+        width: 320px;
+    }
+    .create input{
+        width: 320px;
+    }
+    button{
+      width:100%;  
+    }
+}
